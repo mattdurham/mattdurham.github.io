@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Android - Thoughts on Development - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="At my workplace, HCHB, we are rewriting our product for Android since windows
+mobile 6.5 is pretty much dead and even finding hardware is becoming an &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mattdurham.github.io/blog/2011/03/20/android---thoughts-on-development">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mattdurham.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Android - Thoughts on Development</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-20T00:00:00-04:00" pubdate data-updated="true">Mar 20<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>At my workplace, HCHB, we are rewriting our product for Android since windows
+mobile 6.5 is pretty much dead and even finding hardware is becoming an
+increasingly difficult task. So 8 months ago we jumped into the world of java,
+android and eclipse. The shift from c++ to java has been nothing but smiles
+and unicorns. We will have a 1/3 less code. Plus the code is properly layered
+and more readable, but that is mainly from the benefits of starting with a
+good framework and not coding things in the ui layer like the winmo product
+is.</p>
+
+<p>That being said I have some thoughts on android programming concepts.</p>
+
+<h2>XML layout is pure win</h2>
+
+<p>This is awesome, and a very powerful tool once you get the hang of it. Granted
+the eclipse plugin to view your layout is useless but its easy enough to look
+at a layout on the device. The whole R resource thing is mostly great, though
+when you have something like 200 screens it is cumbersome and you have to
+practice good naming convention.</p>
+
+<h2>Intents are great for small apps, killer (in a bad way) for large ones</h2>
+
+<p>If you are not familiar with the android way, when you enter a new screen
+information is passed along via intents and when you exit it can be passed
+back via intents. The same concept is also used when you rotate the screen.
+This means the UI really drives the creation and destruction of the business
+logic and you generally have to keep the cached object in the intent or in
+your sqlite instances.</p>
+
+<p><strong>For most small apps this works great, for ours, we chose a different road</strong></p>
+
+<h2>The Long Road &ndash; The path we took</h2>
+
+<p>Our product has to maintain backward compatibility with the winmo code at a
+database layer so we couldn&rsquo;t easily use sqlite to store state, and it needed
+to behave semi-close to winmo to make coding quicker. Also we have grandiose
+plans to implement this on other platforms that may never happen. Plus we
+didn&rsquo;t really like the way the stock android handles everything so…</p>
+
+<h3>Everything hangs off the Application</h3>
+
+<p>The application is a built in singleton for every android application, we
+subclass this and all of our business logic hangs off of this application
+object in some form of another. How does this all work? Whenever a parent
+kicks off a child screen, we create what we call presenter objects which
+determine the flow of business logic to the actual screen. We put the hash
+code of the child presenter into the child views intent, the child presenter
+is then thrown into a list. Once the child view is created it grabs the hash
+code out of the intent, looks it up in the global list and then marries itself
+to the presenter via interfaces.</p>
+
+<h3>Presenter and View Marriage</h3>
+
+<p>This way we keep the presenter/business logic separate from the ui. We can
+also better support different screens, for instance on a Droid we generally
+show a list, then tapping on a item takes you to a details screen. So we have
+a presenter that handles phone type devices with a business object handling
+validation, moving the data to and from the database etc. On a tablet though
+we might want to integrate the list and details onto the same screen. So we
+just right a new presenter that uses the same underlying business objects as
+the first.</p>
+
+<p>Once the child view is closed we pass the child presenter to the parent
+presenter in a child finished method, then divorce the two so garbage
+collection can take place.</p>
+
+<h2>What does this all buy us?</h2>
+
+<ul>
+<li>We get well seperated logic, the Views handle their internal state. Controls keep track of themselves and redraw on views.</li>
+<li>In our case the business logic is actually on a different thread so we can do long running queries without adversely impacting the gui.</li>
+<li>We can theoretically support multiple platforms.</li>
+<li>The application is pretty easy to unit test and we try to write it in a way that makes it easy. Though we do not unit test every corner we generally unit test the tough stuff, <em>crosses fingers</em> will unit test the other things when we get the time.</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-20T00:00:00-04:00" pubdate data-updated="true">Mar 20<span>th</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mattdurham.github.io/blog/2011/03/20/android---thoughts-on-development/" data-via="" data-counturl="http://mattdurham.github.io/blog/2011/03/20/android---thoughts-on-development/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/03/17/on-writing-about-great-tools/" title="Previous Post: On Writing About Great Tools">&laquo; On Writing About Great Tools</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/03/22/emacs---the-editor-that-can/" title="Next Post: emacs - The editor that can">emacs - The editor that can &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/14/Test/">Linode Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/Tom+Bihn+-+Smart+Alec+Bag/">Smart Alec Bag</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/03/From-iPad/">From the iPad</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/02/initial-octopress-setup/">Initial Octopress Setup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/09/thoughts-on-the-mac---several-years-in/">Thoughts on the Mac - Several Years In</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

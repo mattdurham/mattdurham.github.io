@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software | My Octopress Blog]]></title>
+  <link href="http://mattdurham.github.io/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://mattdurham.github.io/"/>
+  <updated>2013-06-09T22:20:33-04:00</updated>
+  <id>http://mattdurham.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Initial Octopress Setup]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/01/02/initial-octopress-setup/"/>
+    <updated>2013-01-02T22:47:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/01/02/initial-octopress-setup</id>
+    <content type="html"><![CDATA[<p>This is the initial test from octopress, nothing to exciting to see here.</p>
+]]></content>
+  </entry>
+  
+</feed>

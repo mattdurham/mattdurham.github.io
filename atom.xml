@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://mattdurham.github.io/atom.xml" rel="self"/>
+  <link href="http://mattdurham.github.io/"/>
+  <updated>2013-06-09T22:20:33-04:00</updated>
+  <id>http://mattdurham.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Linode Test]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/03/14/Test/"/>
+    <updated>2013-03-14T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/03/14/Test</id>
+    <content type="html"><![CDATA[<p>Test from linode</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Smart Alec Bag]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/02/06/Tom+Bihn+-+Smart+Alec+Bag/"/>
+    <updated>2013-02-06T00:00:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/02/06/Tom Bihn - Smart Alec Bag</id>
+    <content type="html"><![CDATA[<p><a href="http://www.tombihn.com/PROD/TB0103.html">Tom Bihn Smart Alec</a> is my current bag of choice. Before that I went with a <a href="http://www.saddlebackleather.com/Classic-Briefcase?sc=8&amp;category=301406">Saddleback Leather</a> bag that I loved. The Saddleback had so much character, it felts indesctructible but alas it weighed somewhere around 1000 pounds. I finally decided to look for something different, I quickly went to an <a href="http://www.stmbags.com/catalog/macbook-bag-13-inch/scout2-small-laptop-shoulder-bag/">STM Scout</a> has a in betweener bag for my air. It worked and I still have it for some purposes but it didn&rsquo;t feel how I wanted it. So I started the search and found rave reviews of Tom Bihn items. So I took the plunge and ordered the Smart Alec along with a brain cell, plus a few odds and ends.</p>
+
+<p>Let me tell you what I carry in my bag</p>
+
+<ul>
+<li>15&#8221; Macbook Retina Pro (Horrible name)</li>
+<li>320GB Western Digital USB 3.0 Drive</li>
+<li>Charger with plugbug attachment</li>
+<li>Micro USB</li>
+<li>Lightening Cable</li>
+<li>Apple 30 pin connector</li>
+<li>2-3 Notebooks</li>
+<li>Collection of G2 pens</li>
+<li>Kindle e-ink reader</li>
+</ul>
+
+
+<p>Everything fits easily and if I travel I add my iPad, some other connectors and assorted other handy bits. So that if all I have is my backpack I can manage. Everything is easy to get to, I like the fact it does not have 200 spots to put things. Instead it has 6 major parts, two large pockets on each side. On the top is a pair of zippered pockets. The brain cell for the laptop. Finally the main pocket for all the odds and ends. After several months I found a place for everything and now its pretty straight forward.</p>
+
+<p>The zippers are extremely easy to slide, everything feels secure and high quality. I have no major downsides to this bag, its simple well built and effective. It is a bit pricey but then again it protects a 2200 computer.</p>
+
+<p>Final thought. The logo is pretty awesome!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From the iPad]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/01/03/From-iPad/"/>
+    <updated>2013-01-03T00:00:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/01/03/From-iPad</id>
+    <content type="html"><![CDATA[<p>Blogging this from my ipad.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Initial Octopress Setup]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/01/02/initial-octopress-setup/"/>
+    <updated>2013-01-02T22:47:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/01/02/initial-octopress-setup</id>
+    <content type="html"><![CDATA[<p>This is the initial test from octopress, nothing to exciting to see here.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Thoughts on the Mac - Several Years In]]></title>
+    <link href="http://mattdurham.github.io/blog/2012/02/09/thoughts-on-the-mac---several-years-in/"/>
+    <updated>2012-02-09T00:00:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2012/02/09/thoughts-on-the-mac&#8212;several-years-in</id>
+    <content type="html"><![CDATA[<p><strong>I will state this upfront. The Macbook Air 13” is the best computer I have ever owned.</strong></p>
+
+<p>The tech specs and benchmarks and reviews have all been through posted. This
+is simply for me to write my thoughts and how I use the air. Plus how it has
+changed some of my habits. I use my air has my primary home computer and for
+work along with a standard desktop connected by synergy. Beforehand I had an
+iPad, with a 27” iMac. I used the iMac for any OSX development along with
+general usage at home. The iMac was excellent but was enormous and I wanted
+something portable.</p>
+
+<h2>Work and Home</h2>
+
+<p>To facilitate home and work, I use two different accounts that use Dropbox for
+sharing. Anything important goes into Dropbox and I use it for quick sharing
+between them, it is actually quicker and easier to use this than standard
+samba folders. Most of my time at work is spent in Apple Mail, Office Lync and
+emacs. It is unknown if the SSD or Apple Mail is to credit, but it is 10x
+faster than Outlook at searching. Even faster than my previous love alpine, I
+would still be using alpine if it handled html and images. At home I have an
+app that is a few thousand lines of code, that compiles in under 30 seconds.
+Suffice to say it performs well.</p>
+
+<h2>Storage &amp; Weight</h2>
+
+<p>I was worried about storage and in hindsight wish I had opted for the 256GB
+option. I am just shy of 40GB free with most of my photos and virtual machines
+on an external hard drive. It is workable but I would suggest if this will be
+your primary laptop get the most storage you can afford. Weight…is amazing! I
+was using a wonderful Saddleback Leather Messenger, the downside was my cheap
+STM messenger bag, external hard drive, charger, cables and air weighed less
+than the Saddleback Bag alone. It also is built sturdy so I can throw the bag
+around a bit and have no problem. I do not like babying my hardware, nor do I
+abuse it but I run my laptop, ipad and iphone naked.</p>
+
+<h2>Long Term Problems</h2>
+
+<p>For the love of all that is holy Apple, radius all the edges. I wish the lines
+were a bit softer. The keyboard is alright but I am a keyboard junkie and it
+is simply usable. Thought to be fair it is better than almost any other laptop
+out there. Unknown on the SSD lifespan, I am pretty religious about backups
+since I don’t trust SSDs. Lack of good reasonably priced thunderbolt
+peripherals, I really want to use thunderbolt more but nothing is out that
+seems reasonable. Support for two external monitors, I really want to use two
+monitors but other than hacky solutions this is impossible.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/07/27/"/>
+    <updated>2011-07-27T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/07/</id>
+    <content type="html"><![CDATA[<h2>Behold the Macbook Air</h2>
+
+<p><strong>Review One Week In</strong></p>
+
+<p>I have had the Air for a little less than a week. To sum it up in one quick
+statement, <strong>The best computer I have ever used.</strong> Now for a longer
+explanation. I bought the lowest end 13.3&#8221; Macbook Air. I debated over a 256gb
+i7 version but wanted to limit myself some. Sounds odd, but I wanted to limit
+myself somewhat.</p>
+
+<p>I had been drooling over an Air for a year now but couldn&rsquo;t pull the trigger
+with a Core 2 Duo, that all changed when the Sandy Bridge came out. But your
+not here to listen to my wants for buying something.</p>
+
+<p>Buy it, it&rsquo;s fast. Feels faster than my iMac 27&#8221; at least in normal use.
+Applications open with a flick of the keys and the computer is light and makes
+an excellent road warrior. Would I use it to rip videos, no, the iMac handles
+that much better, if I needed to I would have no problem in using it to do so.</p>
+
+<p>Is 128gb useful? After installing all the basic software, iWork, emacs, Xcode,
+textmate, text expander and a few other items I have almost 80gb left which
+should be enough.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick and Dirty on Blocks in Objective-C]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/06/01/quick-and-dirty-on-blocks-in-objective-c/"/>
+    <updated>2011-06-01T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/06/01/quick-and-dirty-on-blocks-in-objective-c</id>
+    <content type="html"><![CDATA[<p><strong>Update 2011-06-16 I noticed I have a memory leak with the callback, updated to fix that issue</strong></p>
+
+<p>I have been coding for a few months now and in the past few weeks found
+blocks, I found them extremely useful given the asynchronous nature of my
+code. Attached is a very simple Xcode project that shows how to use blocks.
+Some quick observations before we dive in.</p>
+
+<ul>
+<li><strong>Always use typedefs when defining the block definitions</strong></li>
+<li><strong>When using blocks for callbacks, ensure you consider the tradeoffs between using a delegate instead</strong> <strong> A delegate allows you to get information from the &lsquo;parent&rsquo;, you could with a block but its a bit clunky </strong> A delegate is better when you have lots of communication going back and forth, when I use a callback I generally supply a done and an error callback.</li>
+<li><strong>If storing a callback you need to COPY from the original callback and then release your local copy of the callback, this is because generally callbacks are stored on the stack, when you copy they go on the heap like most other objective-c objects</strong></li>
+<li><strong>I have only been using blocks for a few weeks so take anything I say with a grain of salt and be sure to read the original Apple documentation and other resources on the web</strong></li>
+</ul>
+
+
+<p>I fear the actual code is somewhat unimpressive, I typedef the callback and it
+takes one parameter, an int telling it how long it waited.</p>
+
+<pre><code>#import &lt;Foundation/Foundation.h&gt;
+typedef void (^KORCallback)(int wait);
+@interface KORBlocks : NSObject 
+{
+    KORCallback callback_;
+}
+-(id) initWithCallback:(KORCallback) callback;
+-(void) startExecutingAsyncAction;
+@end
+</code></pre>
+
+<p>Here is the implementation, nothing fancy, notice the copy on the
+initWithCallback command, and then we just use GCD (dispatch_async) commands
+to execute the commands, using GCD and blocks gives programs a nice way to
+handle multithreaded programs, this keeps your UI responsive and makes the
+users happy.</p>
+
+<pre><code>@implementation KORBlocks
+
+-(id) initWithCallback:(KORCallback) callback
+{
+    self = [super init];
+    //This is important that you copy the callback, when it comes down to you it is most likely
+    //  stack alloced and calling copy moves it to the heap, also note you need to release it in the dealloc
+    callback_ = [callback copy];
+    return self;
+}
+
+-(void) dealloc
+{
+
+    [callback_ release];
+    [super dealloc];
+}
+
+-(void) startExecutingAsyncAction
+{
+    //Start sleeping on another Queue when that is done call the callback on the main gui thread
+    dispatch_async(dispatch_get_global_queue(0,0), ^(void)
+       {
+        int r = arc4random() % 10;
+        //Sleep for r seconds then call the callback on the main thread
+        [NSThread sleepForTimeInterval:r]; 
+        dispatch_async(dispatch_get_main_queue(), ^(void)
+        {
+               callback_(r);
+               [callback_ release]
+               callback_ = nil;
+        });
+    });
+}
+</code></pre>
+
+<p>@end</p>
+
+<p>Images of the project in action</p>
+
+<p><img src="http://ppog.org/files/blocks1.png" alt="block1" /><img src="http://ppog.org/files/blocks2.png" alt="block1" /></p>
+
+<p>You can find the latest at this url <a href="https://kor.kilnhg.com/Repo/Matts-Public-%0ASource/Group/Examples/Files">Block
+Examples</a></p>
+
+<p><a href="http://ppog.org/files/Blocks.zip">Blocks Zip Download</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Great Tools: Pandora]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/05/21/great-tools-pandora/"/>
+    <updated>2011-05-21T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/05/21/great-tools-pandora</id>
+    <content type="html"><![CDATA[<p><em>Ok, it is not a real productivity tool in the traditional sense</em></p>
+
+<p>Other than having Alpine and emacs open 90% of the time
+<a href="http://www.pandora.com">Pandora</a> is the app that is open 90% of the time.
+What is Pandora? Pandora is a streaming, learning music program. You initially
+feed it an artist or song or genre and it starts playing similar titles, you
+can like or not like a title and it will change what it plays based on all
+sorts of magic algorithms.</p>
+
+<h3>Why Pandora over local music?</h3>
+
+<p>All through HS and college I was mostly a heavy metal fan with a few outbursts
+but I find as I get older I am tending to a larger variety of music. Even
+though Cold is still my favorite band for historical reasons that don&rsquo;t make
+sense! Plus I find myself cutting my MP3 collection to around 5-6 gigs, music
+that is core to me and not all the one off CDs I bought when OnCue was going
+out of business. I found I needed variety, and something beyond my normal
+tastes. For instance on my Raconteurs list it is playing a new track, &ldquo;Say
+Yes&rdquo; by Wax Tailor, never heard it but really digging it at the moment. My
+local music after a few weeks of a new album begins to feel stale, but Pandora
+always has something new and enticing.</p>
+
+<h3>It is always there for you!</h3>
+
+<p>When work was an hour away I had XM radio which was great, local radio for the
+most part sucks and XM back in the day had lots of good stuff. But now with my
+iPhone going everywhere and having decent cell connection I can carry music in
+my pocket for the road. Switching tracks sometimes takes a few seconds but its
+easy on long road tracks to hook up the iPhone to the car hit Pandora and have
+good music cross country. I don&rsquo;t know how radio will live in the future with
+such services!</p>
+
+<h3>A issue I have</h3>
+
+<p>I have an issue with the desktop client though, firstly it is Adobe Air which
+means it pops up that it needs to update at least once a week and two it
+behaves in some non osx fashion. I wish they would come up with a native
+client for OSX and windows, would make my life happier.</p>
+
+<h3>Should you use it? Yes!</h3>
+
+<p>Why should you use it? First its free, I paid for it for no ads and to support
+something I love. Secondly it allows one to broaden ones music choices, plus
+its fun to experiment with, I have a Lady Gaga channel I started for the fun
+of it, after over a year of pruning it now plays anything from Regina Spektor
+to Ben Harper to Kayne West.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SQL Server Aliases]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/05/11/sql-server-aliases/"/>
+    <updated>2011-05-11T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/05/11/sql-server-aliases</id>
+    <content type="html"><![CDATA[<p>At work we have several hundred SQL server instances, about a month ago we
+moved from the reasonable DATACENTER+SERVERNUMBER\AGENCYNAME style to
+asdfhjasklsdfasdf, or some close approximation. After spending a few minutes
+dealing with this atrocity of having to type 31l1 and typing 311 about 5 times
+I decided there had to be a better way. I tried hosts and it worked BUT had
+problems with instances. So then I read about this little used program,
+cliconfg that lets you set a local alias.</p>
+
+<p>So here is a start to setup such a thing on Win7 64 bit, I think 32 bit uses a
+different reg path, create a reg file and put this in that file putting as
+many aliases as you want one per line.</p>
+
+<pre><code>Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSSQLServer\Client\SuperSocketNetLib]
+"ProtocolOrder"="tcp"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSSQLServer\Client\SuperSocketNetLib cp]
+"DefaultPort"=dword:00000599
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSSQLServer\Client\ConnectTo]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSSQLServer\Client\ConnectTo]
+"DEV"="DBMSSOCN,DEVSERVER\DEV"
+</code></pre>
+
+<p>After you do this you can just use DEV has an alias to point to a specific
+instance, I have shared it with coworkers and its been a big hit.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Great Tools: Instapaper]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/04/17/great-tools-instapaper/"/>
+    <updated>2011-04-17T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/04/17/great-tools-instapaper</id>
+    <content type="html"><![CDATA[<p><strong>The short, go <a href="http://www.instapaper.com/">here</a> and buy instapaper</strong></p>
+
+<h2>Instapaper, my number one app</h2>
+
+<p>Instapaper is a simple concept that is an amazing product. It takes webpages,
+archives them for later and redisplays them in a easily read format. Pretty
+much strips all that useless HTML crap and leave you with images that make
+sense and the text. I can only assume it works by magic, since it generally
+will pick up the good stuff and leave the bad stuff. For example, here is a
+recent article I told instapaper that I wanted to read later.</p>
+
+<p><img src="http://www.ppog.org/files/original.png" alt="Original" /></p>
+
+<p>The website is actually pretty clean, nothing really over the top and
+everything seems tasteful. But now looks whats happens when it goes through
+instapaper.</p>
+
+<p><img src="http://www.ppog.org/files/instapapered.png" alt="Instapapered" /></p>
+
+<p>Super clean and uncluttered.</p>
+
+<p>This app is the most important app on any iOS device I own. If I see something
+remotely interesting on my iPhone, iPad or work/home computers the article is
+sent to instapaper. Within a minute I have a nicely formatted item to read. I
+don&rsquo;t even really read most websites anymore, I read a few sentences and if it
+looks interesting I know I can watch it at my leisure later.</p>
+
+<p>Simple, effective and cheap. I send Marco Arment $3 every so often on the
+subscription plan just because I feel that this is such an awesome utility. If
+you have an iOS device you owe it to yourself to buy this app and use it for a
+week.</p>
+
+<h2>How do I find articles?</h2>
+
+<p>For those who don&rsquo;t want to install bookmarklets, then instapaper has a built
+in browser with a dedicated read later button plus it has an awesome list
+where some excellent articles are curated, I especially like the long read
+option. In the past few weeks I have read some excellent before bed reading on
+a pair of twenty something international arms dealers and a collection of
+articles on the nuclear disaster in Japan.</p>
+
+<p>If I could read everything through instapaper I would.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keyboards]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/27/keyboards/"/>
+    <updated>2011-03-27T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/27/keyboards</id>
+    <content type="html"><![CDATA[<h2>Keyboards</h2>
+
+<p>I love keyboards. I have to many right now and am thinking of buying a <a href="http://geekhack.org/showthread.php?t=16163">KBC
+Poker</a> at some point. Even though
+I really don&rsquo;t need another one, but the thought of the minimalist layout and
+the fact at home I have a large <a href="http://store.razerzone.com/store/%0Arazerusa/en_US/pd/productID.211324200">BlackWidow</a> which is a large keyboard, at least
+compared to the <a href="http://www.amazon.com/Majestouch-%0ATenkeyless-Tactile-Action-Keyboard/dp/B00304DCMG/ref=pd_cp_e_0">Filco Tenkeyless</a> I use at work.
+The Filco is brown cherry switches which make a more hollow sound, whereas the
+BlackWidow is blues and has a very clicky noise. I am not sure which I like
+better, I like the Filco overall better than the black widow, but the build
+quality on it is better.</p>
+
+<h2>Let us meet the keyboards</h2>
+
+<p><strong>Note: All credit given to respective sites</strong></p>
+
+<p><strong>Here is the KBC Poker &ndash; I want this, I will probably buy one and then unload it if I don&rsquo;t want it.</strong></p>
+
+<p><img src="http://www.ppog.org/files/kbcpoker.jpg" alt="KBC Poker" /></p>
+
+<p><strong>Now for my current favorite and champion, the Filco Tenkeyless</strong></p>
+
+<p><img src="http://www.ppog.org/files/tenkeyless.jpg" alt="Filco TenkeyLess" /></p>
+
+<p><strong>Then the indestructible unicomp, this thing will outlast the others combined.</strong></p>
+
+<p><img src="http://www.ppog.org/files/unicomp.jpg" alt="Unicomp" /></p>
+
+<p><strong>Finally my at home daily driver, the BlackWidow</strong></p>
+
+<p><img src="http://www.ppog.org/files/blackwidow.jpg" alt="BlackWidow" /></p>
+
+<h3>Why I switched from membrane dome?</h3>
+
+<p>99.99% of all home computers have a membrane keyboard, these are cheap
+keyboards that use a pcb and when the rubber membrane makes contact it closes
+a tiny gap. At one point I used a scissor switch keyboard but one of the keys
+went bad and I tried to fix it and it never felt right after that.</p>
+
+<p>So then I found a website, <a href="http://www.geekhack.org">GeekHack</a> and became
+hooked, within a month I had almost $300 worth of keyboards. Plus on top of
+that I had an accumulation of Apple keyboards I have collected over the years.
+I found that I disliked membrane pads, because they did&rsquo;t feel as smooth, I
+like the thud/click has my hands fly over the keyboard in emacs, it is
+something magical.</p>
+
+<h3>What is a mechanical keyboard?</h3>
+
+<p>Whereas mechanicals use a variety of methods, the two most common are cherry
+switches and buckling springs. I have a
+<a href="http://pckeyboards.stores.yahoo.net/">Unicomp</a> that I used for several years
+but I like the lighter touch of the cherry springs. A great little overview is
+on <a href="http://www.overclock.net/keyboards/491752-mechanical-%0Akeyboard-guide.html">overclock.net</a>.</p>
+
+<p>A mechanical keyboard will last longer than any mass produced membrane
+keyboard, it will allow most people to type quicker, and generally has better
+quality. That being said it is not for everyone, some people enjoy membranes
+and almost every membrane is quieter than a mechanical. Also most mechanicals
+do not come with media features, wireless and other options that might be a
+necessity.</p>
+
+<h3>Finally</h3>
+
+<p>Find a mechanical keyboard and give it a try, see what you think. You may be
+surprised. I plan on writing individual reviews as time goes on. I
+particularly like using the unicomp on the iPad, don&rsquo;t ask me why, I think it
+is the absurdity of it all.</p>
+
+<p>Also you can find all you need to know at <a href="http://www.geekhack.org">geekhack</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Great Tools: Slickrun the windows launcher]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/27/great-tools-slickrun-the-windows-launcher/"/>
+    <updated>2011-03-27T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/27/great-tools-slickrun-the-windows-launcher</id>
+    <content type="html"><![CDATA[<h1>Slickrun &ndash; The Windows Launcher</h1>
+
+<p>Part of my great tools series is a little launcher called
+<a href="http://www.fiddlertool.com/SlickRun/">Slickrun</a>. The quick and short is
+<strong>This is the simplest tool that could get the job done</strong> There are other
+tools that have reams of features and refined interfaces, Colibri and Launchy
+are examples of two. Also on OSX I use Alfred which I find indispensable, even
+though it shares more with launchy than Slickrun.</p>
+
+<h2>What is slickrun?</h2>
+
+<p>Slickrun is a simple launcher that associates a command with a short text. You
+invoke it by hitting a keyboard combination, in my case alt+space. Then type
+in a command and boom an application is there waiting to be used. <strong>Slickrun
+has replaced my Windows start button</strong> I no longer use the Windows Start
+button on a daily basis. I use slickrun.</p>
+
+<h2>Why is slickrun better than the alternatives?</h2>
+
+<p>Any of the launchers are pretty good and for the most part an improvement over
+the stock windows experience. This one though is simple, unobtrusive, fast to
+load and slow to anger. Written in delphi it has a bit of a dated look, but
+then again I never really see Slickrun. Its a small blue band that does my
+bidding and then I have it set to autohide, I never notice it, A blue blip
+that does my bidding is what slickrun is. <em>The other alternatives always
+seemed too slow and obtrusive for what I wanted for a windows launcher.</em></p>
+
+<p>I have used Enzo, Colibri and Launchy and yet my needs were small and Slickrun
+did it with minimal fuss, almost no overhead and with killer speed. <strong>In
+short, Slickrun does one thing, but does it well</strong> I tend to look for apps
+that do one thing and do it well.</p>
+
+<p>Go grab slickrun and give it a try, once you install it the less you notice
+the better of a job it is doing.</p>
+
+<p><em>On a total aside I am writing this in Elements on my iPad using a Unicomp
+Customizer (Model M clone) that weighs more and is larger than the iPad. My
+how the world turns.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[emacs - The editor that can]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/22/emacs---the-editor-that-can/"/>
+    <updated>2011-03-22T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/22/emacs&#8212;the-editor-that-can</id>
+    <content type="html"><![CDATA[<h1>One Text Editor to Rule Them All</h1>
+
+<h2>Stream of thought about emacs</h2>
+
+<p>I love emacs. I loathe it at times. I never could get used to Vim. All my
+computers now remap caps lock to control. Org mode is amazing.  Gar, why is it
+written in lisp. Can I write something in python. I wish it was as small as
+vim.</p>
+
+<p>Preface up front, I am no emacs guru most of my .emacs is stolen from people
+wiser than myself.</p>
+
+<h2>emacs for those not in the know</h2>
+
+<p>emacs is one of the holy two text editors. Vim being the other. Both are
+extremely capable editors, every programmer should know one of them, to be
+honest I don&rsquo;t care which. The history of emacs is best documented
+<a href="http://www.emacswiki.org/emacs/EmacsHistory">here</a>. emacs could best be
+described as an archaic editor that offers unlimited customization if you
+spend time with emacs. At the heart emacs is a text manipulator, beyond that
+it can answer email, read newsgroups, play tetris and act as a shell plus a
+thousand other options. If you have read my other posts you will know I love
+small tools that do one thing exceedingly well, that are simple and to the
+point. emacs is the exact opposite of this, I will try to explain why I love
+emacs.</p>
+
+<h2>Why do I think every programmer needs to know emacs (vim)?</h2>
+
+<p>A programmers tool for putting ideas into action is the lowly text editor.
+Everything we do centers around entering text and having a computer process
+that and help someone do something. <em>But what of IDEs?</em> asks the peanut
+gallery. I love IDEs, software would be difficult without top notch IDEs like
+Eclipse and VS, but every programmer needs to have a secret weapon in the
+closet. Something powerful, something emacs.</p>
+
+<ul>
+<li>emacs is cross platform, via usb drive/dropbox I can have a live emacs ready to go wherever I go. The commands are all the same and it all looks the same. Everyone needs a stable text editor.</li>
+<li>emacs is stable, emacs has been around a long time, it also has some of the worlds best developers working on it. The core code is solid, this is a program you can leave running for months without blinking an eye, I mean it is practically an OS anyways! </li>
+<li>emacs is customizable, if there is some software more customizable than emacs I don&rsquo;t know what it is. Granted most people just cut and paste bits from other people but you can change the very foundations of emacs with knowing just a bit of lisp and how emacs functions.</li>
+<li>emacs will go where no files have gone before, need to open enormous files. emacs is up to the task. Need to work with python, xml, c#, java or just good ole txt. emacs can handle that.</li>
+<li>emacs is free of distraction. The actual ui is very simple. Some text buffers and then a command buffer at the bottom. </li>
+</ul>
+
+
+<p>All that being said I know plenty of good, perhaps great programmers who never
+touch emacs(vim). <em>emacs is not for everyone, it has plenty of faults, and
+speaking of faults.</em></p>
+
+<h2>emacs, the archaic</h2>
+
+<p>Ever get the feeling that a program is secretly trying to kill you? emacs
+sometimes likes to do that. For instance emacs should just pop up and say, <em>oh
+I notice you have not remapped the caps lock key, let me fix that for you
+before your pinky falls off</em>. If you haven&rsquo;t remapped that key do so now
+<a href="http://www.randyrants.com/sharpkeys/">SharpKeys</a> for windows or Keyboard
+Options for OSX. Now thats better, now you don&rsquo;t have to stretch that pinky
+all the way down there. Feels better doesn&rsquo;t it? Now go read an article on
+emacs, download some extensions, include them in your emacs. Put in some
+random lisp command that you got from Paul Graham. Now boom something awesome
+happens and you don&rsquo;t really know why or how, and if you try to look at the
+lisp your head spins because they went way over the qouta on parantheses.</p>
+
+<p>emacs is archaic and has a lot of history that no longer seems pertinent. That
+being said it has one mode that is more awesome than awesomo.</p>
+
+<h2>org mode</h2>
+
+<p>Just go read about it <a href="http://orgmode.org/">here</a>. I will wait. This is one of
+the best tools available. I use org mode more in emacs than text mode. It is
+that important to me. My coworkers think it is mystical how I can create an
+html report detailing what I have done and when I completed it on the fly.
+Then I show them the deep linking and nesting and all the other awesome things
+org mode can do. I can see the envy in their eyes, the same way they envy my
+filco ten keyless keyboard. Yet when I show them emacs they cringe and decide
+to find other ways.</p>
+
+<h2>Are you interested yet?</h2>
+
+<p>If you try emacs and hate it then try vim. If you hate both then give emacs a
+try a few months down the road. Fiddle with it, try to do some simple text
+editing read the tutorial. I spent months maybe a year in an on and off
+relationship with emacs. I hated it with a passion but I read how people loved
+it. Then I got OSX and started doing some development via ssh logging into the
+OSX box and writing python or objective-c and needed a command line text
+editor. So I jumped in and have only peeked back once or twice. All the while
+letting my fingers remember archaic commands.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android - Thoughts on Development]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/20/android---thoughts-on-development/"/>
+    <updated>2011-03-20T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/20/android&#8212;thoughts-on-development</id>
+    <content type="html"><![CDATA[<p>At my workplace, HCHB, we are rewriting our product for Android since windows
+mobile 6.5 is pretty much dead and even finding hardware is becoming an
+increasingly difficult task. So 8 months ago we jumped into the world of java,
+android and eclipse. The shift from c++ to java has been nothing but smiles
+and unicorns. We will have a 1/3 less code. Plus the code is properly layered
+and more readable, but that is mainly from the benefits of starting with a
+good framework and not coding things in the ui layer like the winmo product
+is.</p>
+
+<p>That being said I have some thoughts on android programming concepts.</p>
+
+<h2>XML layout is pure win</h2>
+
+<p>This is awesome, and a very powerful tool once you get the hang of it. Granted
+the eclipse plugin to view your layout is useless but its easy enough to look
+at a layout on the device. The whole R resource thing is mostly great, though
+when you have something like 200 screens it is cumbersome and you have to
+practice good naming convention.</p>
+
+<h2>Intents are great for small apps, killer (in a bad way) for large ones</h2>
+
+<p>If you are not familiar with the android way, when you enter a new screen
+information is passed along via intents and when you exit it can be passed
+back via intents. The same concept is also used when you rotate the screen.
+This means the UI really drives the creation and destruction of the business
+logic and you generally have to keep the cached object in the intent or in
+your sqlite instances.</p>
+
+<p><strong>For most small apps this works great, for ours, we chose a different road</strong></p>
+
+<h2>The Long Road &ndash; The path we took</h2>
+
+<p>Our product has to maintain backward compatibility with the winmo code at a
+database layer so we couldn&rsquo;t easily use sqlite to store state, and it needed
+to behave semi-close to winmo to make coding quicker. Also we have grandiose
+plans to implement this on other platforms that may never happen. Plus we
+didn&rsquo;t really like the way the stock android handles everything so…</p>
+
+<h3>Everything hangs off the Application</h3>
+
+<p>The application is a built in singleton for every android application, we
+subclass this and all of our business logic hangs off of this application
+object in some form of another. How does this all work? Whenever a parent
+kicks off a child screen, we create what we call presenter objects which
+determine the flow of business logic to the actual screen. We put the hash
+code of the child presenter into the child views intent, the child presenter
+is then thrown into a list. Once the child view is created it grabs the hash
+code out of the intent, looks it up in the global list and then marries itself
+to the presenter via interfaces.</p>
+
+<h3>Presenter and View Marriage</h3>
+
+<p>This way we keep the presenter/business logic separate from the ui. We can
+also better support different screens, for instance on a Droid we generally
+show a list, then tapping on a item takes you to a details screen. So we have
+a presenter that handles phone type devices with a business object handling
+validation, moving the data to and from the database etc. On a tablet though
+we might want to integrate the list and details onto the same screen. So we
+just right a new presenter that uses the same underlying business objects as
+the first.</p>
+
+<p>Once the child view is closed we pass the child presenter to the parent
+presenter in a child finished method, then divorce the two so garbage
+collection can take place.</p>
+
+<h2>What does this all buy us?</h2>
+
+<ul>
+<li>We get well seperated logic, the Views handle their internal state. Controls keep track of themselves and redraw on views.</li>
+<li>In our case the business logic is actually on a different thread so we can do long running queries without adversely impacting the gui.</li>
+<li>We can theoretically support multiple platforms.</li>
+<li>The application is pretty easy to unit test and we try to write it in a way that makes it easy. Though we do not unit test every corner we generally unit test the tough stuff, <em>crosses fingers</em> will unit test the other things when we get the time.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[On Writing About Great Tools]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/17/on-writing-about-great-tools/"/>
+    <updated>2011-03-17T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/17/on-writing-about-great-tools</id>
+    <content type="html"><![CDATA[<p>Every week I intend to write about one great tool I use on a daily basic. It
+can be a gadget, software or something incredibly simple.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My 2010 Ultimate Developer and Power Users Tool List for Mac OS X (2010 Edition) « carpeaqua by Justin Williams]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/17/my-2010-ultimate-developer-and-power-users-tool-list-for-mac-os-x-2010-edition--carpeaqua-by-justin-williams/"/>
+    <updated>2011-03-17T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/17/my-2010-ultimate-developer-and-power-users-tool-list-for-mac-os-x-2010-edition&#8211;carpeaqua-by-justin-williams</id>
+    <content type="html"><![CDATA[<p><a href="http://carpeaqua.com/2010/10/25/my-2010-ultimate-developer-and-%0Apower-users-tool-list-for-mac-os-x-2010-edition/?utm_source=feedburner&amp;utm_med%0Aium=feed&amp;utm_campaign=Feed%3A+carpeaqua+%28carpeaqua%29">My 2010 Ultimate Developer and Power Users Tool List for Mac OS X (2010
+Edition) « carpeaqua by Justin
+Williams</a></p>
+
+<p>Awesome list of tools, much like Hanselmans.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jason Fried on Making Money]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/17/jason-fried-on-making-money/"/>
+    <updated>2011-03-17T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/17/jason-fried-on-making-money</id>
+    <content type="html"><![CDATA[<p><a href="http://www.inc.com/magazine/20110301/making-%0Amoney-small-business-advice-from-jason-fried_Printer_Friendly.html">Jason Fried on Making Money</a></p>
+
+<p>Excellent read from someone who knows what they are talking about.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Great Tools: Alpine an Email Client]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/03/17/great-tools-alpine-an-email-client/"/>
+    <updated>2011-03-17T00:00:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/03/17/great-tools-alpine-an-email-client</id>
+    <content type="html"><![CDATA[<h1>Alpine</h1>
+
+<h2>Preamble</h2>
+
+<p><img src="http://media.tumblr.com/tumblr_li7j1jrgdz1qeofh2.png" alt="" /></p>
+
+<p>This is <a href="http://www.washington.edu/alpine/acquire/">Alpine</a> my email client of
+choice. A few years ago my work computer was a P4 with 2 gigs of ram. Whenever
+I opened Outlook with Visual Studio open plus a web browser and all the other
+cruft that is open daily I would hear the grinding of my hard drive and know
+my computer was about slow down. Outlook was eating roughly 60-100 megs of
+memory loading all the various things it does, and on top of that I did not
+like the interface.</p>
+
+<p>That triggered a quest to find a light email client that I could live with. I
+tried the emacs client, but it was to arcane even for emacs. I tried sylpheed,
+thunderbird and claws. None of them scratched an itch. Then I happened to find
+Alpine, and it changed how I handle email.</p>
+
+<p>What is the secret of this app? That each screen focuses on one thing and one
+thing only. You don&rsquo;t get a 3 pane layout. You see the list of messages and
+have to view them to see the text, but you get the whole real estate when you
+do so. <strong>Every screen is razor sharp and focused on doing whatever it needs to
+do without muddying the waters. That is the secret.</strong></p>
+
+<h2>But first the bad</h2>
+
+<p>This is a keyboard driven product, and the editor pico is unwieldy for most
+users. Pico lacks most decent editing capabilities, it is functional but
+spartan. Viewing HTML message requires you to view the HTML in your browser
+and responding in HTML is almost impossible. The other big issue that when you
+view images that are referenced within the email you cannot see them inline.</p>
+
+<h2>The Good</h2>
+
+<h3>Keyboard Centric</h3>
+
+<p>To someone like me the keyboard is your main entry with the mouse being there
+for support. I can fly using Alpine. Set me say I want to search all messages
+that contain the text &ldquo;design&rdquo;, here are my keystrokes ; T A Design ENTER.
+Without moving the mouse, plus when the results come up I can use the keyboard
+to scroll through them.</p>
+
+<h3>Speedy and Lean</h3>
+
+<p>This thing uses little memory and is very fast, saving to the mbox can
+sometimes take a second or two but for searching, scrolling through results
+and most other tasks it does extremely fast. Also consumes about a tenth of
+the memory Outlook did. Mine generally sits around 4-8 megs depending on what
+folder I have open.</p>
+
+<h3>Extremely Rich Filtering Rules</h3>
+
+<p>Alpine has an extremely rich filtering system where you can filter by specific
+headers, push to an external program or do other crazy things. My needs are
+pretty tame, move into this folder, flag this or delete that.</p>
+
+<h3>Small Install and Portable</h3>
+
+<p>Tiny install with a pine.rc and you are good to go. You can also store your
+configuration on the mail server if you wish.</p>
+
+<h3>Stable</h3>
+
+<p>I have never had it crash, ever.</p>
+
+<h2>Wishlist</h2>
+
+<h3>HTML View insert the images</h3>
+
+<p>It is a pain, would be nice if it could copy the html over and auto link the
+images so they are view inline. In an ideal world it could even display the
+HTMLized view when I open the message and show it there.</p>
+
+<h3>Replace Pico with Windows Specific/OSX Specific Editor</h3>
+
+<p>Give some native editing, the ability to cut and paste using the normal OS
+commands. Maybe some basic HTML commands or at least the ability to insert
+pictures. Basically make it look more native while retaining the keyboard
+navigation and focus on showing just a single thing.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Update on Weekend Goal]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/02/08/update-on-weekend-goal/"/>
+    <updated>2011-02-08T00:00:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/02/08/update-on-weekend-goal</id>
+    <content type="html"><![CDATA[<p>Sunday was a bust because I got sucked into the superbowl but Saturday I made
+excellent progress and recovered a chunk of my lost obj c knowledge. Plus got
+to play with Xcode 4.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Weekend Goal]]></title>
+    <link href="http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal/"/>
+    <updated>2011-02-04T00:00:00-05:00</updated>
+    <id>http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal</id>
+    <content type="html"><![CDATA[<p>My goal this weekend is to build a simple iPhone application and get it
+submitted to the app store. Along with me maybe some liquor, pizza and mt dew.</p>
+
+<p>I have an idea that hit me this morning and a few simple sketches, I may blog
+as I go to get a feeling.</p>
+]]></content>
+  </entry>
+  
+</feed>
