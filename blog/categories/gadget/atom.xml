@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: gadget | My Octopress Blog]]></title>
+  <title><![CDATA[Category: gadget | My Thoughts]]></title>
   <link href="http://mattdurham.github.io/blog/categories/gadget/atom.xml" rel="self"/>
   <link href="http://mattdurham.github.io/"/>
-  <updated>2013-06-09T22:20:33-04:00</updated>
+  <updated>2013-06-09T22:23:45-04:00</updated>
   <id>http://mattdurham.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Matt Durham]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
