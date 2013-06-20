@@ -4,7 +4,7 @@
   <title><![CDATA[My Thoughts]]></title>
   <link href="http://mattdurham.github.io/atom.xml" rel="self"/>
   <link href="http://mattdurham.github.io/"/>
-  <updated>2013-06-09T22:23:45-04:00</updated>
+  <updated>2013-06-19T22:22:51-04:00</updated>
   <id>http://mattdurham.github.io/</id>
   <author>
     <name><![CDATA[Matt Durham]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RPath and Dylibs a fustrating tale]]></title>
+    <link href="http://mattdurham.github.io/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale/"/>
+    <updated>2013-06-19T22:08:00-04:00</updated>
+    <id>http://mattdurham.github.io/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale</id>
+    <content type="html"><![CDATA[<p>This is the true story of how Dylibs caused me pain, here is the totally unhappy error I got.</p>
+
+<pre><code>dyld: Library not loaded: /usr/local/lib/libct.4.dylib
+   Referenced from: Blah blah blah
+Reason: image not found
+</code></pre>
+
+<p>I chased this down for the better part of the hour until coming across some information on <em>install_name_tool</em>, you can find more details about the tool <a href="http://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man1/install_name_tool.1.html">here</a>. To find out the basic command I used with @rpath I used.</p>
+
+<pre><code>install\_name\_tool -id "@rpath/../Frameworks/libsybdb.5.dylib" libsybdb.5.dylib
+</code></pre>
+
+<p>Then in my application I had to add the @rpath to the Runtime Search Paths</p>
+
+<pre><code>@loader_path/../Frameworks
+</code></pre>
+
+<p>After I setup all my dylibs like this my application runs once again. Oddly enough my application ran smoothly for a while during development but I did a brew update and I can only guess it wiped out the libraries I was using. I was surprised. Seems somewhat archaic to my day job of Java and .NET. So if for some reason a google search turns up this error and saves someone my pain then it is all worth its.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Linode Test]]></title>
@@ -810,19 +836,6 @@ navigation and focus on showing just a single thing.</p>
     <content type="html"><![CDATA[<p>Sunday was a bust because I got sucked into the superbowl but Saturday I made
 excellent progress and recovered a chunk of my lost obj c knowledge. Plus got
 to play with Xcode 4.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[One Weekend Goal]]></title>
-    <link href="http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal/"/>
-    <updated>2011-02-04T00:00:00-05:00</updated>
-    <id>http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal</id>
-    <content type="html"><![CDATA[<p>My goal this weekend is to build a simple iPhone application and get it
-submitted to the app store. Along with me maybe some liquor, pizza and mt dew.</p>
-
-<p>I have an idea that hit me this morning and a few simple sketches, I may blog
-as I go to get a feeling.</p>
 ]]></content>
   </entry>
   

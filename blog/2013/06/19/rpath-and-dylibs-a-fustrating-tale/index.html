@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>One Weekend Goal - My Thoughts</title>
+  <title>RPath and Dylibs a fustrating tale - My Thoughts</title>
   <meta name="author" content="Matt Durham">
 
   
-  <meta name="description" content="My goal this weekend is to build a simple iPhone application and get it
-submitted to the app store. Along with me maybe some liquor, pizza and mt dew &hellip;">
+  <meta name="description" content="This is the true story of how Dylibs caused me pain, here is the totally unhappy error I got. dyld: Library not loaded: /usr/local/lib/libct.4.dylib &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ submitted to the app store. Along with me maybe some liquor, pizza and mt dew &h
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal">
+  <link rel="canonical" href="http://mattdurham.github.io/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Thoughts" type="application/atom+xml">
@@ -69,7 +68,7 @@ submitted to the app store. Along with me maybe some liquor, pizza and mt dew &h
   
   <header>
     
-      <h1 class="entry-title">One Weekend Goal</h1>
+      <h1 class="entry-title">RPath and Dylibs a Fustrating Tale</h1>
     
     
       <p class="meta">
@@ -85,18 +84,31 @@ submitted to the app store. Along with me maybe some liquor, pizza and mt dew &h
   
 
 
-<time datetime="2011-02-04T00:00:00-05:00" pubdate data-updated="true">Feb 4<span>th</span>, 2011</time>
+<time datetime="2013-06-19T22:08:00-04:00" pubdate data-updated="true">Jun 19<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>My goal this weekend is to build a simple iPhone application and get it
-submitted to the app store. Along with me maybe some liquor, pizza and mt dew.</p>
+<div class="entry-content"><p>This is the true story of how Dylibs caused me pain, here is the totally unhappy error I got.</p>
 
-<p>I have an idea that hit me this morning and a few simple sketches, I may blog
-as I go to get a feeling.</p>
+<pre><code>dyld: Library not loaded: /usr/local/lib/libct.4.dylib
+   Referenced from: Blah blah blah
+Reason: image not found
+</code></pre>
+
+<p>I chased this down for the better part of the hour until coming across some information on <em>install_name_tool</em>, you can find more details about the tool <a href="http://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man1/install_name_tool.1.html">here</a>. To find out the basic command I used with @rpath I used.</p>
+
+<pre><code>install\_name\_tool -id "@rpath/../Frameworks/libsybdb.5.dylib" libsybdb.5.dylib
+</code></pre>
+
+<p>Then in my application I had to add the @rpath to the Runtime Search Paths</p>
+
+<pre><code>@loader_path/../Frameworks
+</code></pre>
+
+<p>After I setup all my dylibs like this my application runs once again. Oddly enough my application ran smoothly for a while during development but I did a brew update and I can only guess it wiped out the libraries I was using. I was surprised. Seems somewhat archaic to my day job of Java and .NET. So if for some reason a google search turns up this error and saves someone my pain then it is all worth its.</p>
 </div>
 
 
@@ -119,15 +131,21 @@ as I go to get a feeling.</p>
   
 
 
-<time datetime="2011-02-04T00:00:00-05:00" pubdate data-updated="true">Feb 4<span>th</span>, 2011</time>
+<time datetime="2013-06-19T22:08:00-04:00" pubdate data-updated="true">Jun 19<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal/" data-via="" data-counturl="http://mattdurham.github.io/blog/2011/02/04/one-weekend-goal/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mattdurham.github.io/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale/" data-via="" data-counturl="http://mattdurham.github.io/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale/" >Tweet</a>
   
   
   
@@ -136,10 +154,8 @@ as I go to get a feeling.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/01/26/cr48---musings/" title="Previous Post: CR48 - Musings">&laquo; CR48 - Musings</a>
+        <a class="basic-alignment left" href="/blog/2013/03/14/Test/" title="Previous Post: Linode Test">&laquo; Linode Test</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2011/02/08/update-on-weekend-goal/" title="Next Post: Update on Weekend Goal">Update on Weekend Goal &raquo;</a>
       
     </p>
   </footer>

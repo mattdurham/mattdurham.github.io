@@ -9,8 +9,7 @@
   <meta name="author" content="Matt Durham">
 
   
-  <meta name="description" content="Test from linode
-">
+  <meta name="description" content="This is the true story of how Dylibs caused me pain, here is the totally unhappy error I got. dyld: Library not loaded: /usr/local/lib/libct.4.dylib &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +65,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale/">RPath and Dylibs a Fustrating Tale</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-19T22:08:00-04:00" pubdate data-updated="true">Jun 19<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is the true story of how Dylibs caused me pain, here is the totally unhappy error I got.</p>
+
+<pre><code>dyld: Library not loaded: /usr/local/lib/libct.4.dylib
+   Referenced from: Blah blah blah
+Reason: image not found
+</code></pre>
+
+<p>I chased this down for the better part of the hour until coming across some information on <em>install_name_tool</em>, you can find more details about the tool <a href="http://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man1/install_name_tool.1.html">here</a>. To find out the basic command I used with @rpath I used.</p>
+
+<pre><code>install\_name\_tool -id "@rpath/../Frameworks/libsybdb.5.dylib" libsybdb.5.dylib
+</code></pre>
+
+<p>Then in my application I had to add the @rpath to the Runtime Search Paths</p>
+
+<pre><code>@loader_path/../Frameworks
+</code></pre>
+
+<p>After I setup all my dylibs like this my application runs once again. Oddly enough my application ran smoothly for a while during development but I did a brew update and I can only guess it wiped out the libraries I was using. I was surprised. Seems somewhat archaic to my day job of Java and .NET. So if for some reason a google search turns up this error and saves someone my pain then it is all worth its.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -628,83 +680,6 @@ instance, I have shared it with coworkers and its been a big hit.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/04/17/great-tools-instapaper/">Great Tools: Instapaper</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-17T00:00:00-04:00" pubdate data-updated="true">Apr 17<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>The short, go <a href="http://www.instapaper.com/">here</a> and buy instapaper</strong></p>
-
-<h2>Instapaper, my number one app</h2>
-
-<p>Instapaper is a simple concept that is an amazing product. It takes webpages,
-archives them for later and redisplays them in a easily read format. Pretty
-much strips all that useless HTML crap and leave you with images that make
-sense and the text. I can only assume it works by magic, since it generally
-will pick up the good stuff and leave the bad stuff. For example, here is a
-recent article I told instapaper that I wanted to read later.</p>
-
-<p><img src="http://www.ppog.org/files/original.png" alt="Original" /></p>
-
-<p>The website is actually pretty clean, nothing really over the top and
-everything seems tasteful. But now looks whats happens when it goes through
-instapaper.</p>
-
-<p><img src="http://www.ppog.org/files/instapapered.png" alt="Instapapered" /></p>
-
-<p>Super clean and uncluttered.</p>
-
-<p>This app is the most important app on any iOS device I own. If I see something
-remotely interesting on my iPhone, iPad or work/home computers the article is
-sent to instapaper. Within a minute I have a nicely formatted item to read. I
-don&rsquo;t even really read most websites anymore, I read a few sentences and if it
-looks interesting I know I can watch it at my leisure later.</p>
-
-<p>Simple, effective and cheap. I send Marco Arment $3 every so often on the
-subscription plan just because I feel that this is such an awesome utility. If
-you have an iOS device you owe it to yourself to buy this app and use it for a
-week.</p>
-
-<h2>How do I find articles?</h2>
-
-<p>For those who don&rsquo;t want to install bookmarklets, then instapaper has a built
-in browser with a dedicated read later button plus it has an awesome list
-where some excellent articles are curated, I especially like the long read
-option. In the past few weeks I have read some excellent before bed reading on
-a pair of twenty something international arms dealers and a collection of
-articles on the nuclear disaster in Japan.</p>
-
-<p>If I could read everything through instapaper I would.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -720,6 +695,10 @@ articles on the nuclear disaster in Japan.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/19/rpath-and-dylibs-a-fustrating-tale/">RPath and Dylibs a Fustrating Tale</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/14/Test/">Linode Test</a>
       </li>
     
@@ -733,10 +712,6 @@ articles on the nuclear disaster in Japan.</p>
     
       <li class="post">
         <a href="/blog/2013/01/02/initial-octopress-setup/">Initial Octopress Setup</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/02/09/thoughts-on-the-mac---several-years-in/">Thoughts on the Mac - Several Years In</a>
       </li>
     
   </ul>
